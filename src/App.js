@@ -10,7 +10,7 @@ const Contact = lazy(() => import('./Contact'));
 function App() {
 
   return (
-    <div style={{myValue}}>
+    <div>
       <Suspense fallback={<p>loading.....</p>}>
        <Contact />
        <Form />
