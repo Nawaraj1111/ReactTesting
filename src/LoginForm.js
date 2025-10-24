@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './LoginForm.css'
 
 function LoginForm() {
     const [email, setEmail] = useState('');
@@ -13,8 +14,8 @@ function LoginForm() {
 
     return (
         <div style={{ maxWidth: '400px', margin: '0 auto', padding: '20px' }}>
-            <h2>Login</h2>
-            <form onSubmit={handleSubmit}>
+            <h2 style={{backgroundColor:"cyan",color:"yellow"}}>Login</h2>
+            <form onSubmit={handleSubmit} className='form'>
                 <div style={{ marginBottom: '15px' }}>
                     <label htmlFor="email" style={{ display: 'block', marginBottom: '5px' }}>Email:</label>
                     <input
@@ -31,7 +32,7 @@ function LoginForm() {
                     <input
                         type="password"
                         id="password"
-                        value={password}
+                        val ue={password}
                         onChange={(e) => setPassword(e.target.value)}
                         style={{ width: '100%', padding: '8px', boxSizing: 'border-box' }}
                         required

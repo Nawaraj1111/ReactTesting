@@ -1,4 +1,6 @@
-import Ram from './Ram.js'
+import Ram from './Ram.js';
+import React from 'react';
+import Cart from './Cart.js';
 
 let Rambhadur = (props) => 
 {
@@ -55,6 +57,7 @@ function Contact(props) {
         let value =[1,2,3,4,5];
         <p>I am the content of Rambhadur</p>
       </Rambhadur>
+      <Cart />
     </div>
   );
 }
